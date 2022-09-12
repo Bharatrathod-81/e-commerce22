@@ -3,7 +3,7 @@ import './header.css';
 
 export const Header = () => {
   return (
-    <div className='header-body'>
+    <div className='header-body b'>
       <div>
         <div className='logo'></div>
         <p className='logo-para'>SA Infrastructure Consultation Pvt. Ltd</p>

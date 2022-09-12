@@ -3,10 +3,15 @@
   background-color: black;
 }
 
+.b{
+  border: 2px solid;
+}
+
 .intro-content{
-  height: 100vh;
+  position: absolute;
+  box-sizing: border-box;
   height: 80vh;
-  width: 100%;
+  width: 1920px;
 }
 
 .img1{
@@ -81,7 +86,7 @@
 
 .intro3-container{
   position: absolute;
-  top: 785px;
+  top: 680px;
   left: 220px;
   width: 99px;
   height: 18px;
@@ -90,12 +95,11 @@
   letter-spacing: 9px;
   color: #DDDDDD;
   opacity: 1;
-  /* border: 2px solid; */
 }
 
 .intro4-container{
   position: absolute;
-  top: 790px;
+  top: 680px;
   left: 942px;
   width: 36px;
   height: 37px;
@@ -104,10 +108,694 @@
 }
 
 .intro5-container{
-  position: absolute;
-  top: 780px;
+  position: fixed;
+  top: 775px;
   left: 1840px;
   padding: 1rem;
   background: #FFFFFF3D ;
   border-radius: 1rem;
+  z-index: 1;
+}
+
+.intro-content2{
+  position: absolute;
+  box-sizing: border-box;
+  top: 832px;
+  left: 0px;
+  right: px;
+  width: 1920px;
+  height: 900px;
+  background: #000000 ;
+}
+
+.intro-content2_heading{
+  position: absolute;
+  top: 100px;
+  left: 831px;
+  right: 829px;
+  bottom: 759px;
+  width: 270px;
+  height: 20px;
+  text-align: center;
+  font: normal normal normal 18px/21px Helvetica;
+  letter-spacing: 0.9px;
+  color: #DDDDDD;
+}
+
+.intro-content2_para{
+  position: absolute;
+  top: 171px;
+  left: 460px;
+  right: 460px;
+  bottom: 496px;
+  width: 1000px;
+  height: 233px;
+  text-align: center;
+  font: normal normal normal 30px/40px Helvetica;
+  letter-spacing: 0.75px;
+  color: #DDDDDD;
+}
+
+.text_about_company{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 380px;
+  left: 871px;
+  width: 170px;
+  height: 20px;
+  text-align: center;
+  font: normal normal normal 18px/21px Helvetica;
+  letter-spacing: 0.9px;
+  color: #D3951E;
+}
+
+.intro_details{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 657px;
+  left: 0px;
+  width: 100%;
+  height: 170px;
+  overflow: scroll;
+  overflow-y: hidden;
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
+  color: white;
+}
+
+.intro_details::-webkit-scrollbar {
+  display: none;
+}
+
+.details_data{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 1561px;
+  left: 869px;
+  width: 202px;
+  height: 80px;
+  text-align: center;
+  letter-spacing: NaNpx;
+  color: #DDDDDD;
+}
+
+.data_counting{
+  display: flex;
+  
+}
+
+.details_number{
+  font-size: 75px;
+  font-weight: bold;
+}
+
+.details_text{
+  position: relative;
+  left: 150px;
+  width: 12rem;
+}
+
+hr {
+  border:none;
+  border-top:2px dashed black;
+  border-bottom: 2px dashed black;
+  color:#fff;
+  background-color:#fff;
+  height:1px;
+  width:100px;
+  margin: 0 12rem;
+}
+
+.dash1,.dash2,.dash3,
+.dash4,.dash5,.dash6,.dash7{
+  position: relative;
+  width: 19rem;
+  top: 50%;
+  left: -10%;
+}
+
+.fa-certificate,
+.fa-user-o,
+.fa-folder-open-o,
+.fa-gear,
+.fa-line-chart,
+.fa-industry{
+  color: #D3951E;
+}
+
+.location_details{
+  position: absolute;
+  background-color: #1b1b1b;
+  top: 1730px;
+  left: 0px;
+  width: 1920px;
+  height: 900px;
+}
+
+.locations_container{
+  position: absolute;
+  top: 575px;
+  left: 120px;
+  width: 1599px;
+  height: 93px;
+}
+
+.location_year{
+  position: absolute;
+  top: -35px;
+  left: 80px;
+  width: 67px;
+  height: 33px;
+  text-align: left;
+  font: normal normal bold 30px/34px Helvetica;
+  letter-spacing: 0px;
+  color: #DDDDDD;
+}
+
+.location1{
+  position: absolute;
+  top: 25px;
+  left: 80px;
+  width: 382px;
+  height: 48px;
+  text-align: left;
+  letter-spacing: 0.9px;
+  color: #DDDDDD;
+}
+
+.location2{
+  position: absolute;
+  top: 25px;
+  left: 600px;
+  width: 382px;
+  height: 48px;
+  text-align: left;
+  letter-spacing: 0.9px;
+  color: #DDDDDD;
+}
+
+.location3{
+  position: absolute;
+  top: 25px;
+  left: 1200px;
+  width: 382px;
+  height: 48px;
+  text-align: left;
+  letter-spacing: 0.9px;
+  color: #DDDDDD;
+}
+
+.result_details_container{
+  background-color: white;
+}
+
+.result_details{
+  border: 2px solid;
+  position: absolute;
+  top: 2625px;
+  left: 0px;
+  width: 1916px;
+  height: 900px;
+  background-color: #000000;
+}
+
+.explore_projects{
+  position: absolute;
+  top: 122px;
+  left: 400px;
+  width: 198px;
+  height: 20px;
+  text-align: left;
+  font: normal normal normal 18px/28px Helvetica;
+  letter-spacing: 0.9px;
+  color: #C4C4C4;
+}
+
+.achive_results{
+  position: absolute;
+  top: 177px;
+  left: 400px;
+  width: 400px;
+  height: 33px;
+  text-align: left;
+  font: normal normal normal 30px/34px Helvetica;
+  letter-spacing: 0.75px;
+  color: #DDDDDD;
+}
+
+.highways_letter{
+  position: absolute;
+  top: 333px;
+  left: 657px;
+  width: 606px;
+  height: 112px;
+  text-align: center;
+  font: normal normal bold 100px/115px Helvetica;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  color: transparent;
+  -webkit-background-clip: text;
+  z-index: 1;
+}
+
+.result_para{
+  position: absolute;
+  top: 594px;
+  left: 400px;
+  width: 462px;
+  height: 160px;
+  text-align: left;
+  font: normal normal normal 18px/28px Helvetica;
+  letter-spacing: 0.9px;
+  color: #DDDDDD;
+}
+
+.explore_casestudy{
+  position: absolute;
+  top: 760px;
+  left: 400px;
+  width: 195px;
+  height: 20px;
+  text-align: left;
+  font: normal normal normal 18px/28px Helvetica;
+  letter-spacing: 0.9px;
+  color: #D3951E;
+}
+
+.result_img{
+  position: absolute;
+  top: 2625px;
+  left: 960px;
+  width: 960px;
+  height: 900px;
+  background: url('/public/images/Img3.png') 0% 15% no-repeat padding-box;
+}
+
+.all_projects{
+  position: absolute;
+  top: 3520px;
+  left: 0px;
+  width: 1920px;
+  height: 900px;
+  background: #000000 0% 0% no-repeat padding-box;
+}
+
+.all{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 112px;
+  left: 400px;
+  width: 67px;
+  height: 40px;
+  background: #9F3132 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  color: white;
+}
+
+.highways{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 112px;
+  left: 487px;
+  width: 106px;
+  height: 40px;
+  background: #FFFFFF26 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  color: white;
+}
+
+.bridges{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 112px;
+  left: 613px;
+  width: 135px;
+  height: 40px;
+  background: #FFFFFF26 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  color: white;
+}
+
+.more_projects{
+  position: absolute;
+  top: 108px;
+  left: 1369px;
+  width: 149px;
+  height: 20px;
+  text-align: left;
+  font: normal normal normal 18px/28px Helvetica;
+  letter-spacing: 0.9px;
+  color: #D3951E;
+}
+
+.projects_imgs{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: scroll;
+  overflow-y: hidden;
+  top: 212px;
+  width: 100%;
+  height: 528px;
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
+}
+
+.projects_imgs::-webkit-scrollbar {
+  display: none;
+}
+
+.project_card{
+  position: relative;
+  margin-left: 6rem;
+  width: 440px;
+  height: 510px;
+}
+
+.card_img{
+  position: absolute;
+  left: 0%;
+  width: 440px;
+  height: 280px;
+  background: #00000026 0% 0% no-repeat padding-box;
+}
+
+.company_name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 290px;
+  left: 0px;
+  width: fit-content;
+  height: 30px;
+  color: #C4C4C4;
+  border: 1px solid #FFFFFF80;
+  border-radius: 3px;
+  padding: 0 1rem;
+}
+
+.project_name{
+  position: absolute;
+  top: 320px;
+  left: 0px;
+  width: 440px;
+  height: 36px;
+  text-align: left;
+  font: normal normal normal 30px/40px Helvetica;
+  letter-spacing: 0.75px;
+  color: #DDDDDD;
+  margin-left: 0.7rem;
+}
+
+.lane,.length,.type{
+  margin-left: 0.4rem;
+  position: absolute;
+  left: 0px;
+  width: 440px;
+  height: 20px;
+  text-align: left;
+  font: normal normal normal 18px/28px Helvetica;
+  letter-spacing: 0.9px;
+  color: #DDDDDD;
+}
+
+.lane{
+  top: 405px;
+}
+
+.length{
+  top: 425px;
+}
+
+.type{
+  top:445px;
+}
+
+.core_strength{
+  position: absolute;
+  top: 840px;
+  left: 0px;
+  width: 1920px;
+  height: 890px;
+  background: #000000 0% 0% no-repeat padding-box;
+}
+
+.core_strength_text{
+  position: absolute;
+  top: 117px;
+  left: 400px;
+  width: 210px;
+  height: 33px;
+  text-align: left;
+  font: normal normal bold 30px/40px Helvetica;
+  letter-spacing: 0.75px;
+  color: #DDDDDD;
+}
+
+.core_strength_text1{
+  position: absolute;
+  top: 163px;
+  left: 400px;
+  width: 487px;
+  height: 20px;
+  text-align: left;
+  font: normal normal normal 18px/28px Helvetica;
+  letter-spacing: 0.9px;
+  color: #DDDDDD;
+}
+
+.core_strength_container{
+  display: flex;
+  overflow: scroll;
+  overflow-y: hidden;
+  position: absolute;
+  top: 302px;
+  left: 400px;
+  width: 1079px;
+  height: 330px;
+}
+
+.core_strength_container::-webkit-scrollbar {
+  display: none;
+}
+
+.core_card{
+  position: relative;
+  top: 0px;
+  width: 500px;
+  height: 330px;
+  margin-left: 2rem;
+}
+
+.core_img1{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 81px;
+  height: 80px;
+  background: transparent url('/public/images/Icon.svg') 0% 0% no-repeat padding-box;
+}
+.core_img2{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 81px;
+  height: 80px;
+  background: transparent url('/public/images/Icon2.svg') 0% 0% no-repeat padding-box;
+}
+.core_img3{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 81px;
+  height: 80px;
+  background: transparent url('/public/images/Icon1.svg') 0% 0% no-repeat padding-box;
+}
+
+.core_heading{
+  position: absolute;
+  top: 110px;
+  left: 0px;
+  width: 500px;
+  height: 33px;
+  text-align: left;
+  font: normal normal normal 30px/40px Helvetica;
+  letter-spacing: 0.75px;
+  color: #DDDDDD;
+}
+
+.core_para{
+  position: absolute;
+  top: 166px;
+  left: 0px;
+  width: 500px;
+  height: 104px;
+  text-align: left;
+  font: normal normal normal 18px/28px Helvetica;
+  letter-spacing: 0.9px;
+  color: #DDDDDDB3;
+}
+
+.core_learn_more{
+  position: absolute;
+  top: 304px;
+  left: 0px;
+  width: 126px;
+  height: 20px;
+  text-align: left;
+  font: normal normal normal 18px/28px Helvetica;
+  letter-spacing: 0.9px;
+  color: #DDDDDD;
+}
+
+.core_icons{
+  position: absolute;
+  top: 757px;
+  left: 1420px;
+  width: 99px;
+  height: 18px;
+  text-align: right;
+  font: normal normal normal 18px/28px la-regular-400;
+  letter-spacing: 9px;
+  color: #DDDDDD;
+}
+
+.all_employes{
+  position: absolute;
+  top: 5250px;
+  left: 0px;
+  width: 1920px;
+  height: 900px;
+  background: #000000 0% 0% no-repeat padding-box;
+}
+
+.all_employes_heading{
+  position: absolute;
+  top: 122px;
+  left: 867px;
+  width: 190px;
+  height: 33px;
+  text-align: center;
+  font: normal normal bold 30px/28px Helvetica;
+  letter-spacing: 0.75px;
+  color: #DDDDDD;
+}
+
+.all_employes_para{
+  position: absolute;
+  top: 167px;
+  left: 719px;
+  width: 490px;
+  height: 20px;
+  text-align: center;
+  font: normal normal normal 18px/28px Helvetica;
+  letter-spacing: 0.9px;
+  color: #DDDDDD;
+}
+
+.all_empolye_card{
+  display: flex;
+  position: absolute;
+  top: 276px;
+  left: 289px;
+  width: fit-content;
+  height: 390px;
+}
+
+
+.empolye_card{
+  position: relative;
+  width: 222px;
+  height: 390px;
+  margin-right: 4rem;
+  border-bottom: 1px solid gray;
+}
+
+.employe_img{
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 280px;
+  background: #00000026 0% 0% no-repeat padding-box;
+}
+
+.employe_name{
+  position: absolute;
+  top: 271px;
+  left: 0px;
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  font: normal normal bold 18px/40px Helvetica;
+  letter-spacing: 0.45px;
+  color: #DDDDDD;
+}
+
+.position{
+  position: absolute;
+  top: 312px;
+  left: 0px;
+  width: 100%;
+  height: 17px;
+  text-align: center;
+  font: normal normal normal 16px/28px Helvetica;
+  letter-spacing: 0.8px;
+  color: #DDDDDDB3;
+}
+
+.social_media{
+  position: relative;
+  top: 93px;
+  left: 0px;
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid #FFFFFF80;
+  padding-bottom: 0.5rem;
+  background-color: #000000;
+  display: none;
+}
+
+.fa-twitter,.fa-facebook-f,.fa-linkedin{
+  color: white;
+  margin-left: 1rem;
+}
+
+.empolye_card:hover .social_media{
+  display: inherit;
+}
+
+.trusted_brands{
+  position: absolute;
+  top: 6144px;
+  left: 0px;
+  width: 1920px;
+  height: 1472px;
+  background: #000000 0% 0% no-repeat padding-box;
+}
+
+.contact1{
+  position: absolute;
+  top: 6002px;
+  left: 866px;
+  width: 194px;
+  height: 20px;
+  text-align: center;
+  font: normal normal normal 18px/21px Helvetica;
+  letter-spacing: 0.45px;
+  color: #D3951E;
 }
