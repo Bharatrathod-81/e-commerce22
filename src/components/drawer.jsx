@@ -28,6 +28,7 @@ import SimpleCard from '../pages/cartPage';
 
 
 const drawerWidth = 240;
+console.log(localStorage.getItem("user"));
 
 const useStyles = makeStyles((theme) => ({
     root: {

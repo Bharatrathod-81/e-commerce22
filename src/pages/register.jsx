@@ -15,7 +15,7 @@ import { useNavigate } from 'react-router-dom';
 
 export default function RegisterPage() {
 
-    const {setContextData} = useDataContext();
+    const { setContextData } = useDataContext();
     const navigate = useNavigate();
 
     const [editData, setEditData] = useState({
@@ -40,15 +40,15 @@ export default function RegisterPage() {
                         password: editData.password
                     });
                 localStorage.removeItem("user");
-                localStorage.setItem("user", JSON.stringify(data[0]));
-                setContextData({ type: "GET_USER", payload: data[0] });
+                localStorage.setItem("user", JSON.stringify(data));
+                setContextData({ type: "GET_USER", payload: data});
+
                 navigate('/')
             } catch (err) {
                 console.log(err);
             }
         }
     };
-
     return (
         <Box display="flex" alignItems="center" justifyContent="center">
             <Card

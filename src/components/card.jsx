@@ -43,7 +43,7 @@ export const ImgMediaCard = ({ data }) => {
             }
         }
     }
-    const UserData = user.email ? user : JSON.parse(localStorage.getItem("user"));
+
 
     return (
         <div>
