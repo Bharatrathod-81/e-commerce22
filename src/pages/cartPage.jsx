@@ -34,8 +34,8 @@ export default function SimpleCard() {
   const { contextData: { user }, setContextData } = useDataContext();
 
   const clickHandler = async (e) => {
-    const newData = user.email ? user : JSON.parse(localStorage.getItem("user"));
-    if (newData.email) {
+    const newData = user?.email ? user : JSON.parse(localStorage.getItem("user"));
+    if (newData?.email) {
       if (newData?.cart.some(a => a.id === e.id)) {
         const newArr = newData?.cart.map(a => a.id === e.id ? { ...a, Qty: a.Qty + 1 } : a);
         const { data } = await axios.put(`https://api-generator.retool.com/8bKwAR/data/${newData.id}`, {
@@ -57,8 +57,8 @@ export default function SimpleCard() {
   }
 
   const addFunc = async (e) => {
-    const newData = user.email ? user : JSON.parse(localStorage.getItem("user"));
-    if (newData.email) {
+    const newData = user?.email ? user : JSON.parse(localStorage.getItem("user"));
+    if (newData?.email) {
       if (newData?.cart.some(a => a.id === e.id)) {
         const newArr = newData?.cart.map(a => a.id === e.id ? { ...a, Qty: a.Qty + 1 } : a);
         const { data } = await axios.put(`https://api-generator.retool.com/8bKwAR/data/${newData.id}`, {
@@ -72,9 +72,9 @@ export default function SimpleCard() {
   }
 
   const subFunc = async (e) => {
-    const newData = user.email ? user : JSON.parse(localStorage.getItem("user"));
+    const newData = user?.email ? user : JSON.parse(localStorage.getItem("user"));
     if (e.Qty > 1) {
-      if (newData?.cart.some(a => a.id === e.id)) {
+      if (newData?.cart?.some(a => a.id === e.id)) {
         const newArr = newData?.cart.map(a => a.id === e.id ? { ...a, Qty: a.Qty - 1 } : a);
         const { data } = await axios.put(`https://api-generator.retool.com/8bKwAR/data/${newData.id}`, {
           ...newData, cart: newArr
@@ -87,8 +87,8 @@ export default function SimpleCard() {
   }
 
   const deleteFunc = async (e) => {
-    const newData = user.email ? user : JSON.parse(localStorage.getItem("user"));
-    if (newData.email) {
+    const newData = user?.email ? user : JSON.parse(localStorage.getItem("user"));
+    if (newData?.email) {
       if (newData?.cart.some(a => a.id === e.id)) {
         const newArr = newData?.cart.filter(a => a.id !== e.id );
         const { data } = await axios.put(`https://api-generator.retool.com/8bKwAR/data/${newData.id}`, {
@@ -101,14 +101,14 @@ export default function SimpleCard() {
     }
   }
 
-  const UserData = user.email ? user : JSON.parse(localStorage.getItem("user"));
+  const UserData = user?.email ? user : JSON.parse(localStorage.getItem("user"));
 
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
     <Card className={classes.root}>
-      {UserData?.cart.map(e =>
+      {UserData?.cart?.map(e =>
         <Box display="flex" p={1} justifyContent="center" border={1} m={1}>
           <CardContent>
             <Box display="flex" p={1} justifyContent="center">
